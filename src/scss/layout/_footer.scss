@@ -1,0 +1,22 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the footer of the site/application.
+// -----------------------------------------------------------------------------
+.footer {
+  height: 200px;
+  position: relative;
+
+    font-weight: 300;
+    text-transform: uppercase;
+
+    .social-bar {
+      ul {
+        li {
+          list-style-type: none;
+        }
+      }
+    }
+
+    .copyright {
+
+    }
+}

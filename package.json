@@ -1,0 +1,43 @@
+{
+  "name": "flex-mix",
+  "version": "0.0.1",
+  "description": "Boilerplate for front-end development",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "web",
+    "front-end",
+    "boilerplate",
+    "frontend-boilerplate",
+    "html",
+    "css",
+    "sass"
+  ],
+  "author": "Daniil Sydorenko <daniildeveloper@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DaniilSydorenko/flex-mix.git"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "github:gulpjs/gulp#4.0",
+    "gulp-clean": "^0.3.2",
+    "gulp-concat": "^2.6.0",
+    "gulp-htmlmin": "^3.0.0",
+    "gulp-livereload": "^3.8.1",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.3.2",
+    "gulp-uglify": "^2.0.0",
+    "gulp-util": "^3.0.7",
+    "gulp-watch": "^4.3.10",
+    "merge-stream": "^1.0.0",
+    "npm-check-updates": "^2.8.0"
+  },
+  "dependencies": {
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2"
+  }
+}

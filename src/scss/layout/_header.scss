@@ -1,0 +1,140 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the header of the site/application.
+// -----------------------------------------------------------------------------
+
+.chocolate-grid-header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+
+  background-size: cover;
+  background: $lighter-grey;
+  @include flex-box(space-between, inherit, initial, column, wrap, 100vh);
+
+  .nav-menu {
+    @include flex-box(space-between, center, center, row, wrap, 140px);
+
+    .nav-menu-logo{
+      font-size: 14px;
+      text-transform: uppercase;
+    }
+
+    .nav-menu-container {
+      @include flex-box(center, center, center, row, wrap, auto);
+
+      .nav-menu-item {
+        padding: 10px;
+        font-size: 14px;
+        text-transform: uppercase;
+
+        a {
+          display: block;
+          width: 100%;
+          overflow: hidden;
+          position: relative;
+
+          &:before {
+            content: '';
+            transition: .5s all ease-in-out;
+            display: block;
+            width: 200px;
+            background: rgba(116, 174, 206, 0.3) !important;
+            height: 25px;
+            position: absolute;
+            right: 130px;
+
+          }
+
+          &:hover {
+            transition: .5s all ease-in-out;
+            color: #000;
+            &:before {
+              right: 0;
+            }
+          }
+        }
+      }
+
+    }
+  }
+
+  .chocolate-grid-hero {
+    flex: 1 0 0;
+    @include flex-box(center, center, initial, column, wrap, auto);
+
+    .chocolate-grid-animation {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+      width: 240px;
+      position: relative;
+      top: -70px;
+
+      .cube {
+        width: 100px;
+        height: 100px;
+        margin: 10px;
+        background: #ffffff;
+        border: thin solid #414141;
+
+        //-webkit-animation: diagonal 2s infinite;
+        //-moz-animation: diagonal 2s infinite;
+        //-o-animation: diagonal 2s infinite;
+        //animation: diagonal 2s infinite;
+      }
+
+      .cube-1 {
+        animation-delay: 0.5s, 0.5s;
+        animation-duration: 3s, 3.5s;
+        animation-name: route-1, fade-out;
+        animation-fill-mode: forwards, forwards;
+        animation-timing-function: ease-in-out, ease-in-out;
+      }
+      .cube-2 {
+        animation-delay: 0.5s, 0.5s;
+        animation-duration: 3s, 3.5s;
+        animation-name: route-2, fade-out;
+        animation-fill-mode: forwards, forwards;
+        animation-timing-function: ease-in-out, ease-in-out;
+      }
+      .cube-3 {
+        animation-delay: 0.5s, 0.5s;
+        animation-duration: 3s, 3.5s;
+        animation-name: route-3, fade-out;
+        animation-fill-mode: forwards, forwards;
+        animation-timing-function: ease-in-out, ease-in-out;
+      }
+      .cube-4 {
+        animation-delay: 0.5s, 0.5s;
+        animation-duration: 3s, 3.5s;
+        animation-name: route-4, fade-out;
+        animation-fill-mode: forwards, forwards;
+        animation-timing-function: ease-in-out, ease-in-out;
+      }
+    }
+
+    h3 {
+      font-size: 30px;
+      font-weight: 300;
+      text-transform: uppercase;
+      flex: 0 0 150px;
+      text-align: center;
+    }
+
+    p {
+      position: absolute;
+      /* bottom: 110px; */
+      opacity: 0;
+      animation: fade-in 4.2s forwards;
+      font-size: 2em;
+      text-transform: uppercase;
+      margin: 0;
+      white-space: nowrap;
+      text-align: center;
+    }
+  }
+}
