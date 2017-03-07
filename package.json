@@ -1,7 +1,7 @@
 {
-  "name": "flex-mix",
+  "name": "chocolate.grid.js-demo",
   "version": "0.0.1",
-  "description": "Boilerplate for front-end development",
+  "description": "Demo page for Chocolate.grid.js",
   "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -18,7 +18,7 @@
   "author": "Daniil Sydorenko <daniildeveloper@gmail.com>",
   "repository": {
     "type": "git",
-    "url": "https://github.com/DaniilSydorenko/flex-mix.git"
+    "url": "git@github.com:DaniilSydorenko/chocolate.grid.js-demo.git"
   },
   "license": "MIT",
   "devDependencies": {
@@ -35,9 +35,5 @@
     "gulp-watch": "^4.3.10",
     "merge-stream": "^1.0.0",
     "npm-check-updates": "^2.8.0"
-  },
-  "dependencies": {
-    "react": "^15.4.2",
-    "react-dom": "^15.4.2"
   }
 }

@@ -1,10 +1,10 @@
 {
-  "name": "flex-mix",
+  "name": "chocolate.grid.js-demo",
   "version": "0.0.1",
   "authors": [
     "Daniil Sydorenko <daniildeveloper@gmail.com>"
   ],
-  "description": "Boilerplate for front-end development",
+  "description": "Demo page for Chocolate.grid.js",
   "main": "",
   "moduleType": [],
   "keywords": [

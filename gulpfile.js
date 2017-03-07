@@ -37,6 +37,7 @@ var gulp = require('gulp'),
 				"assets/js/main.js"
 			],
 			css: [
+				"assets/css/style.css",
 				"bower_components/flexboxgrid/dist/flexboxgrid.css",
 				"bower_components/wow/css/libs/animate.css"
 			]

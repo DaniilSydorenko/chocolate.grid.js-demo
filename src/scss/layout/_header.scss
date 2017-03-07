@@ -16,7 +16,7 @@
     @include flex-box(space-between, center, center, row, wrap, 140px);
 
     .nav-menu-logo{
-      font-size: 14px;
+      font-size: 15px;
       text-transform: uppercase;
     }
 
@@ -24,25 +24,28 @@
       @include flex-box(center, center, center, row, wrap, auto);
 
       .nav-menu-item {
-        padding: 10px;
-        font-size: 14px;
+        font-size: 15px;
         text-transform: uppercase;
+        line-height: normal;
 
         a {
           display: block;
           width: 100%;
           overflow: hidden;
           position: relative;
+          line-height: 38px;
+          padding: 10px;
 
           &:before {
             content: '';
             transition: .5s all ease-in-out;
             display: block;
-            width: 200px;
-            background: rgba(116, 174, 206, 0.3) !important;
-            height: 25px;
+            width: 135px;
+            height: 37px;
             position: absolute;
-            right: 130px;
+            right: 150px;
+            border: thin solid #41ade5 !important;
+            box-sizing: border-box;
 
           }
 
@@ -79,7 +82,7 @@
         height: 100px;
         margin: 10px;
         background: #ffffff;
-        border: thin solid #414141;
+        border: thin solid #41ade5;
 
         //-webkit-animation: diagonal 2s infinite;
         //-moz-animation: diagonal 2s infinite;
