@@ -46,7 +46,6 @@
             right: 150px;
             border: thin solid #41ade5 !important;
             box-sizing: border-box;
-
           }
 
           &:hover {
@@ -67,12 +66,8 @@
     @include flex-box(center, center, initial, column, wrap, auto);
 
     .chocolate-grid-animation {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: center;
-      align-items: center;
-      align-content: center;
+      @include flex-box(center, center, center, row, wrap, auto);
+
       width: 240px;
       position: relative;
       top: -70px;
@@ -83,13 +78,10 @@
         margin: 10px;
         background: #ffffff;
         border: thin solid #41ade5;
-
-        //-webkit-animation: diagonal 2s infinite;
-        //-moz-animation: diagonal 2s infinite;
-        //-o-animation: diagonal 2s infinite;
-        //animation: diagonal 2s infinite;
       }
 
+
+      // Loop ??
       .cube-1 {
         animation-delay: 0.5s, 0.5s;
         animation-duration: 3s, 3.5s;
@@ -128,16 +120,19 @@
       text-align: center;
     }
 
-    p {
+    .hero-text {
       position: absolute;
-      /* bottom: 110px; */
+      width: 400px;
       opacity: 0;
       animation: fade-in 4.2s forwards;
       font-size: 2em;
       text-transform: uppercase;
       margin: 0;
-      white-space: nowrap;
       text-align: center;
+
+      @media screen and (max-width: 767px){
+        width: 300px;
+      }
     }
   }
 }
