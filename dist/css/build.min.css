@@ -862,28 +862,38 @@ body{margin:0;color:#222;font:300 125%/1.4 Roboto,"Helvetica Neue",sans-serif;ba
 .chocolate-grid-header .nav-menu .nav-menu-container .nav-menu-item a:hover:before{right:0}
 .chocolate-grid-header .chocolate-grid-hero{flex:1 0 0;display:flex;flex-direction:column;flex-wrap:wrap;justify-content:center;align-items:center;align-content:initial;height:auto}
 .chocolate-grid-header .chocolate-grid-hero .chocolate-grid-animation{display:flex;flex-direction:row;flex-wrap:wrap;justify-content:center;align-items:center;align-content:center;height:auto;width:240px;position:relative;top:-70px}
-.chocolate-grid-header .chocolate-grid-hero .chocolate-grid-animation .cube{width:100px;height:100px;margin:10px;background:#fff;border:thin solid #41ade5}
+.chocolate-grid-header .chocolate-grid-hero .chocolate-grid-animation .cube{width:100px;height:100px;margin:10px;background:#fff;border:thin solid rgba(65,173,229,.62);box-shadow:-7px 7px 0 0 rgba(65,173,229,.35)}
 .chocolate-grid-header .chocolate-grid-hero .chocolate-grid-animation .cube-1{animation-name:route-1,fade-out}
 .chocolate-grid-header .chocolate-grid-hero .chocolate-grid-animation .cube-2{animation-name:route-2,fade-out}
 .chocolate-grid-header .chocolate-grid-hero .chocolate-grid-animation .cube-3{animation-name:route-3,fade-out}
 .chocolate-grid-header .chocolate-grid-hero .chocolate-grid-animation .cube-4{animation-name:route-4,fade-out}
 .chocolate-grid-header .chocolate-grid-hero h3{font-size:30px;font-weight:300;text-transform:uppercase;flex:0 0 150px;text-align:center}
 .chocolate-grid-header .chocolate-grid-hero .hero-text{position:absolute;width:400px;opacity:0;animation:fade-in 4.2s forwards;font-size:2em;text-transform:uppercase;margin:0;text-align:center}
+.chocolate-grid-header .chocolate-grid-hero .hero-text p:first-child{font-size:35px}
+.chocolate-grid-header .chocolate-grid-hero .hero-text p:last-child{font-size:70px;font-weight:100;color:#41ade5}
 @media screen and (max-width:767px){.chocolate-grid-header .chocolate-grid-hero .hero-text{width:300px}
 }
 .footer{height:200px;position:relative}
 .footer .row{height:inherit}
+@media (min-width:768px){.footer .row .social-bar{display:flex;flex-direction:row;flex-wrap:wrap;justify-content:flex-start;align-items:center;align-content:initial;height:auto}
+}
 .footer .row .social-bar ul{padding:0;margin:0}
 @media (max-width:767px){.footer .row .social-bar ul{display:flex;flex-direction:row;flex-wrap:wrap;justify-content:center;align-items:center;align-content:initial;height:auto}
 }
 .footer .row .social-bar ul li{list-style-type:none;display:inline-block;padding:15px}
-.footer .row .social-bar ul li a span{border-radius:50%;font-size:30px}
+.footer .row .social-bar ul li a span{border-radius:50%;font-size:30px;transition:.2s all ease-in-out}
+.footer .row .social-bar ul li a span:hover{transform:scale(1.3)}
+.footer .row .social-bar ul li a.linkedin span:hover{color:#0077B5}
+.footer .row .social-bar ul li a.facebook span:hover{color:#3b5998}
+.footer .row .social-bar ul li a.twitter span:hover{color:#1da1f2}
+@media (min-width:768px){.footer .row .copyright{display:flex;flex-direction:row;flex-wrap:wrap;justify-content:flex-end;align-items:center;align-content:initial;height:auto}
+}
 .footer .row .copyright p{font-size:15px;font-weight:300;text-transform:uppercase;text-align:right}
 @media (max-width:767px){.footer .row .copyright p{text-align:center}
 }
 .wrapper{padding:0;overflow:hidden}
 div[class^=item]{width:250px;margin:30px 0}
-.chocolate-grid-items{background:#41ade5;position:relative;padding:100px 0;margin:105vh 0 50px;z-index:1}
+.chocolate-grid-items{background:#41ade5;position:relative;padding:100px 0;margin:105vh 0 40px;z-index:1}
 .chocolate-grid-items:after,.chocolate-grid-items:before{background:inherit;content:'';display:block;height:50%;left:0;position:absolute;right:0;z-index:-1;-webkit-backface-visibility:hidden}
 .chocolate-grid-items:before{top:0;transform:skewY(1.5deg);transform-origin:100% 0}
 .chocolate-grid-items:after{bottom:0;transform:skewY(-1.5deg);transform-origin:100%}
