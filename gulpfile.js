@@ -39,7 +39,8 @@ var gulp = require('gulp'),
 			css: [
 				"assets/css/style.css",
 				"bower_components/flexboxgrid/dist/flexboxgrid.css",
-				"bower_components/wow/css/libs/animate.css"
+				"bower_components/wow/css/libs/animate.css",
+				"node_modules/font-awesome/css/font-awesome.css"
 			]
 		}
 	};

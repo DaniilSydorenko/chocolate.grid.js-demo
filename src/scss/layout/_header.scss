@@ -55,6 +55,22 @@
               right: 0;
             }
           }
+          &.icon-item {
+            display: none;
+          }
+          @media screen and (max-width: 768px) {
+            display: none;
+            &.icon-item {
+              color: #2c3e50;
+              font-size: 24px;
+              display: block;
+
+              &:before {
+                width: 40px;
+              }
+            }
+          }
+
         }
       }
 
@@ -82,7 +98,7 @@
       }
 
 
-      // Loop ??
+      // Loop , Function ??
       .cube-1 {
         animation-delay: 0.5s, 0.5s;
         animation-duration: 3s, 3.5s;
@@ -135,7 +151,6 @@
         &:first-child {
           font-size: 35px;
         }
-
         &:last-child {
           font-size: 70px;
           font-weight: 100;
@@ -145,6 +160,15 @@
 
       @media screen and (max-width: 767px){
         width: 300px;
+
+        p {
+          &:first-child {
+            font-size: 30px;
+          }
+          &:last-child {
+            font-size: 55px;
+          }
+        }
       }
     }
   }

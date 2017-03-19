@@ -35,5 +35,8 @@
     "gulp-watch": "^4.3.10",
     "merge-stream": "^1.0.0",
     "npm-check-updates": "^2.8.0"
+  },
+  "dependencies": {
+    "font-awesome": "^4.7.0"
   }
 }
