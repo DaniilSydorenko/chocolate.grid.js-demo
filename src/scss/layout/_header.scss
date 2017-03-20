@@ -15,9 +15,17 @@
   .nav-menu {
     @include flex-box(space-between, center, center, row, wrap, 140px);
 
-    .nav-menu-logo{
-      font-size: 15px;
+    .nav-menu-logo {
+      font-size: 17px;
       text-transform: uppercase;
+    }
+
+    @media screen and (max-width: 400px) {
+      @include flex-box(center, center, center, column, wrap, 140px);
+
+      .nav-menu-logo {
+        margin: 0 0 20px 0;
+      }
     }
 
     .nav-menu-container {
@@ -27,21 +35,22 @@
         font-size: 15px;
         text-transform: uppercase;
         line-height: normal;
+        padding: 0 0 0 20px;
 
         a {
-          display: block;
+          display: none;
           width: 100%;
           overflow: hidden;
           position: relative;
           line-height: 38px;
-          padding: 10px;
+          padding: 0 10px;
 
           &:before {
             content: '';
             transition: .5s all ease-in-out;
             display: block;
-            width: 135px;
-            height: 37px;
+            width: 40px;
+            height: 38px;
             position: absolute;
             right: 150px;
             border: thin solid #41ade5 !important;
@@ -56,21 +65,18 @@
             }
           }
           &.icon-item {
-            display: none;
+            display: block;
+            font-size: 24px;
+            i {
+              color: #414141;
+            }
           }
-          @media screen and (max-width: 768px) {
-            display: none;
+          @media screen and (max-width: 400px) {
             &.icon-item {
-              color: #2c3e50;
-              font-size: 24px;
-              display: block;
-
               &:before {
-                width: 40px;
               }
             }
           }
-
         }
       }
 

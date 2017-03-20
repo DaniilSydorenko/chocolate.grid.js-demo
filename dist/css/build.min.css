@@ -1573,18 +1573,18 @@ body{margin:0;color:#222;font:300 125%/1.4 Roboto,"Helvetica Neue",sans-serif;ba
 .visually-hidden{border:0;clip:rect(0 0 0 0);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px}
 .chocolate-grid-header{position:fixed;top:0;right:0;left:0;background:#fefefe;display:flex;flex-direction:column;flex-wrap:wrap;justify-content:space-between;align-items:inherit;align-content:initial;height:100vh}
 .chocolate-grid-header .nav-menu{display:flex;flex-direction:row;flex-wrap:wrap;justify-content:space-between;align-items:center;align-content:center;height:140px}
-.chocolate-grid-header .nav-menu .nav-menu-logo{font-size:15px;text-transform:uppercase}
+.chocolate-grid-header .nav-menu .nav-menu-logo{font-size:17px;text-transform:uppercase}
+@media screen and (max-width:400px){.chocolate-grid-header .nav-menu{display:flex;flex-direction:column;flex-wrap:wrap;justify-content:center;align-items:center;align-content:center;height:140px}
+.chocolate-grid-header .nav-menu .nav-menu-logo{margin:0 0 20px}
+}
 .chocolate-grid-header .nav-menu .nav-menu-container{display:flex;flex-direction:row;flex-wrap:wrap;justify-content:center;align-items:center;align-content:center;height:auto}
-.chocolate-grid-header .nav-menu .nav-menu-container .nav-menu-item{font-size:15px;text-transform:uppercase;line-height:normal}
-.chocolate-grid-header .nav-menu .nav-menu-container .nav-menu-item a{display:block;width:100%;overflow:hidden;position:relative;line-height:38px;padding:10px}
-.chocolate-grid-header .nav-menu .nav-menu-container .nav-menu-item a:before{content:'';transition:.5s all ease-in-out;display:block;width:135px;height:37px;position:absolute;right:150px;border:thin solid #41ade5!important;box-sizing:border-box}
+.chocolate-grid-header .nav-menu .nav-menu-container .nav-menu-item{font-size:15px;text-transform:uppercase;line-height:normal;padding:0 0 0 20px}
+.chocolate-grid-header .nav-menu .nav-menu-container .nav-menu-item a{display:none;width:100%;overflow:hidden;position:relative;line-height:38px;padding:0 10px}
+.chocolate-grid-header .nav-menu .nav-menu-container .nav-menu-item a:before{content:'';transition:.5s all ease-in-out;display:block;width:40px;height:38px;position:absolute;right:150px;border:thin solid #41ade5!important;box-sizing:border-box}
 .chocolate-grid-header .nav-menu .nav-menu-container .nav-menu-item a:hover{transition:.5s all ease-in-out;color:#000}
 .chocolate-grid-header .nav-menu .nav-menu-container .nav-menu-item a:hover:before{right:0}
-.chocolate-grid-header .nav-menu .nav-menu-container .nav-menu-item a.icon-item{display:none}
-@media screen and (max-width:768px){.chocolate-grid-header .nav-menu .nav-menu-container .nav-menu-item a{display:none}
-.chocolate-grid-header .nav-menu .nav-menu-container .nav-menu-item a.icon-item{color:#2c3e50;font-size:24px;display:block}
-.chocolate-grid-header .nav-menu .nav-menu-container .nav-menu-item a.icon-item:before{width:40px}
-}
+.chocolate-grid-header .nav-menu .nav-menu-container .nav-menu-item a.icon-item{display:block;font-size:24px}
+.chocolate-grid-header .nav-menu .nav-menu-container .nav-menu-item a.icon-item i{color:#414141}
 .chocolate-grid-header .chocolate-grid-hero{flex:1 0 0;display:flex;flex-direction:column;flex-wrap:wrap;justify-content:center;align-items:center;align-content:initial;height:auto}
 .chocolate-grid-header .chocolate-grid-hero .chocolate-grid-animation{display:flex;flex-direction:row;flex-wrap:wrap;justify-content:center;align-items:center;align-content:center;height:auto;width:240px;position:relative;top:-70px}
 .chocolate-grid-header .chocolate-grid-hero .chocolate-grid-animation .cube{width:100px;height:100px;margin:10px;background:#fff;border:thin solid rgba(65,173,229,.62);box-shadow:-7px 7px 0 0 rgba(65,173,229,.35)}
