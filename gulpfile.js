@@ -1,4 +1,6 @@
-var gulp = require('gulp'),
+"use strict";
+
+const gulp = require('gulp'),
 	concat = require('gulp-concat'),
 	uglify = require('gulp-uglify'),
 	rename = require('gulp-rename'),
@@ -103,13 +105,13 @@ gulp.task('concat-minify-js', function (done) {
 });
 
 gulp.task('concat-minify-css', function (done) {
-	var sassStream = gulp.src(paths.components.sass)
+	let sassStream = gulp.src(paths.components.sass)
 		.pipe(sass({
 			errLogToConsole: true
 		}));
 
-	var cssStream = gulp.src(paths.vendors.css);
-	var mergedStream = merge(sassStream, cssStream)
+    let cssStream = gulp.src(paths.vendors.css);
+    let mergedStream = merge(sassStream, cssStream)
 		.pipe(concat('build.min.css'))
 		.pipe(minify({
 			keepBreaks: true
@@ -127,7 +129,7 @@ gulp.task('concat-minify-css', function (done) {
 gulp.task('concat-minify-html', function (done) {
 	gulp.src(paths.components.html)
 		.pipe(htmlmin({collapseWhitespace: true}))
-		.pipe(gulp.dest(paths.dirs.html))
+		.pipe(gulp.dest(paths.dirs.html))``
 		.on('end', function () {
 			gutil.log('HTML concatenated and merged!');
 		});
