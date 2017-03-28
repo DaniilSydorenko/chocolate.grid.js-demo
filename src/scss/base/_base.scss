@@ -31,3 +31,7 @@ a {
     text-decoration: none;
   }
 }
+
+[data-reactroot], [data-reactid] {
+  outline: none;
+}

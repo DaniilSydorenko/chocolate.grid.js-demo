@@ -13,6 +13,10 @@ const gulp = require('gulp'),
 	merge = require('merge-stream'),
 	ncu = require('npm-check-updates'),
 	htmlmin = require('gulp-htmlmin'),
+	browserify = require('browserify'),
+	babelify = require('babelify'),
+	source = require('vinyl-source-stream'),
+
 	paths = {
 		dirs: {
 			build: '.dist',
@@ -104,6 +108,18 @@ gulp.task('concat-minify-js', function (done) {
 	done();
 });
 
+gulp.task('concat-minify-app-js', function (done) {
+    return browserify({entries: './app/app.js', extensions: ['.jsx', '.js'], debug: true})
+        .transform('babelify', {presets: ['es2015', 'react']})
+        .bundle()
+        .pipe(source('bundle.js'))
+        .pipe(gulp.dest('dist/js'))
+        .on('end', function () {
+            gutil.log('App scripts concatenated and merged!');
+            done();
+        });
+});
+
 gulp.task('concat-minify-css', function (done) {
 	let sassStream = gulp.src(paths.components.sass)
 		.pipe(sass({
@@ -139,10 +155,11 @@ gulp.task('concat-minify-html', function (done) {
 gulp.task('watch', function (done) {
 	gulp.watch('./src/scss/**/*.scss', gulp.series('concat-minify-css'));
 	gulp.watch('./assets/js/*.js', gulp.series('concat-minify-js'));
-	gulp.watch('*.html', gulp.series('concat-minify-html'));
+    gulp.watch('./app/**/*.js', gulp.series('concat-minify-app-js'));
+    gulp.watch('*.html', gulp.series('concat-minify-html'));
 	done();
 });
 
 gulp.task('default', gulp.series('concat-minify-css',
-	gulp.parallel('concat-minify-js', 'concat-minify-html', 'watch')
+	gulp.parallel('concat-minify-js', 'concat-minify-app-js', 'concat-minify-html', 'watch')
 ));
