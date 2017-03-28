@@ -129,7 +129,7 @@ gulp.task('concat-minify-css', function (done) {
 gulp.task('concat-minify-html', function (done) {
 	gulp.src(paths.components.html)
 		.pipe(htmlmin({collapseWhitespace: true}))
-		.pipe(gulp.dest(paths.dirs.html))``
+		.pipe(gulp.dest(paths.dirs.html))
 		.on('end', function () {
 			gutil.log('HTML concatenated and merged!');
 		});
