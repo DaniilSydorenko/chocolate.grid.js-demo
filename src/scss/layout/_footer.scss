@@ -2,23 +2,29 @@
 // This file contains all styles related to the footer of the site/application.
 // -----------------------------------------------------------------------------
 .footer {
-  height: 200px;
+  //height: 200px;
   position: relative;
+  background-color: #ffffff;
 
   .row {
     height: inherit;
 
     .social-bar {
       @media (min-width: 768px){
+        padding-top: 4rem;
+        padding-bottom: 4rem;
         @include flex-box(flex-start, center, initial, row, wrap, auto);
       }
-      ul {
-        @media (max-width: 767px){
+      @media (max-width: 767px){
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        ul {
           @include flex-box(center, center, initial, row, wrap, auto);
         }
+      }
+      ul {
         padding: 0;
         margin: 0;
-
         li {
           list-style-type: none;
           display: inline-block;
@@ -61,6 +67,8 @@
 
     .copyright {
       @media (min-width: 768px){
+        padding-top: 4rem;
+        padding-bottom: 4rem;
         @include flex-box(flex-end, center, initial, row, wrap, auto);
       }
       p {
@@ -71,6 +79,8 @@
       }
 
       @media (max-width: 767px){
+        padding-top: 1rem;
+        padding-bottom: 1rem;
         p {
           text-align: center;
         }

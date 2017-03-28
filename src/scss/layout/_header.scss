@@ -105,34 +105,45 @@
 
 
       // Loop , Function ??
-      .cube-1 {
-        animation-delay: 0.5s, 0.5s;
-        animation-duration: 3s, 3.5s;
-        animation-name: route-1, fade-out;
-        animation-fill-mode: forwards, forwards;
-        animation-timing-function: ease-in-out, ease-in-out;
+
+      @for $i from 1 through 4 {
+        .cube-#{$i} {
+          animation-delay: 0.5s, 0.5s;
+          animation-duration: 3s, 3.5s;
+          animation-name: route-#{$i}, fade-out;
+          animation-fill-mode: forwards, forwards;
+          animation-timing-function: ease-in-out, ease-in-out;
+        }
       }
-      .cube-2 {
-        animation-delay: 0.5s, 0.5s;
-        animation-duration: 3s, 3.5s;
-        animation-name: route-2, fade-out;
-        animation-fill-mode: forwards, forwards;
-        animation-timing-function: ease-in-out, ease-in-out;
-      }
-      .cube-3 {
-        animation-delay: 0.5s, 0.5s;
-        animation-duration: 3s, 3.5s;
-        animation-name: route-3, fade-out;
-        animation-fill-mode: forwards, forwards;
-        animation-timing-function: ease-in-out, ease-in-out;
-      }
-      .cube-4 {
-        animation-delay: 0.5s, 0.5s;
-        animation-duration: 3s, 3.5s;
-        animation-name: route-4, fade-out;
-        animation-fill-mode: forwards, forwards;
-        animation-timing-function: ease-in-out, ease-in-out;
-      }
+
+      //.cube-1 {
+      //  animation-delay: 0.5s, 0.5s;
+      //  animation-duration: 3s, 3.5s;
+      //  animation-name: route-1, fade-out;
+      //  animation-fill-mode: forwards, forwards;
+      //  animation-timing-function: ease-in-out, ease-in-out;
+      //}
+      //.cube-2 {
+      //  animation-delay: 0.5s, 0.5s;
+      //  animation-duration: 3s, 3.5s;
+      //  animation-name: route-2, fade-out;
+      //  animation-fill-mode: forwards, forwards;
+      //  animation-timing-function: ease-in-out, ease-in-out;
+      //}
+      //.cube-3 {
+      //  animation-delay: 0.5s, 0.5s;
+      //  animation-duration: 3s, 3.5s;
+      //  animation-name: route-3, fade-out;
+      //  animation-fill-mode: forwards, forwards;
+      //  animation-timing-function: ease-in-out, ease-in-out;
+      //}
+      //.cube-4 {
+      //  animation-delay: 0.5s, 0.5s;
+      //  animation-duration: 3s, 3.5s;
+      //  animation-name: route-4, fade-out;
+      //  animation-fill-mode: forwards, forwards;
+      //  animation-timing-function: ease-in-out, ease-in-out;
+      //}
     }
 
     h3 {
@@ -145,6 +156,8 @@
 
     .hero-text {
       position: absolute;
+      top: 0;
+      left: -30%;
       width: 400px;
       opacity: 0;
       animation: fade-in 4.2s forwards;
@@ -166,6 +179,7 @@
 
       @media screen and (max-width: 767px){
         width: 300px;
+        left: -15%;
 
         p {
           &:first-child {

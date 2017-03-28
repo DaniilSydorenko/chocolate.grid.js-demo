@@ -16,7 +16,7 @@ div[class^="item"] {
   background: #41ade5;
   position: relative;
   padding: 100px 0;
-  margin: 105vh 0 40px 0;
+  margin: 105vh 0 0 0;
   z-index: 1;
 
   &:before,
@@ -68,7 +68,8 @@ div[class^="item"] {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: thin solid #a9a9a9;
+  //border: thin solid #a9a9a9;
+  box-shadow: 4px 4px 2px 0 #537ca0;
   background: #ffffff;
 
   .item-info {
