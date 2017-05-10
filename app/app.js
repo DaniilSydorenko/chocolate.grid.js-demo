@@ -4,7 +4,6 @@ import ReactDOM from 'react-dom';
 class ChocolateItem extends React.Component {
     constructor(props) {
         super(props);
-        props.items = [];
     }
 
     render() {
