@@ -98,4 +98,5 @@ fabric.properties
 
 ### Assets ###
 
-/assets/img/projects_img
+/src/assets/img/projects_img
+#src/**/*.css

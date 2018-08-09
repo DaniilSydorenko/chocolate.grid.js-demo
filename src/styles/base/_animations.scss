@@ -1,0 +1,85 @@
+//@-webkit-keyframes diagonal {
+//  0%       { transform: translatex(-30px) translatey(-30px) }
+//  50%      { transform: translatex(20px) translatey(20px); }
+//  100%     { transform: translatex(-30px) translatey(-30px) }
+//}
+//
+//@-moz-keyframes diagonal {
+//  0%       { transform: translatex(-30px) translatey(-30px) }
+//  50%      { transform: translatex(20px) translatey(20px); }
+//  100%     { transform: translatex(-30px) translatey(-30px) }
+//}
+//
+//@-o-keyframes diagonal {
+//  0%       { transform: translatex(-30px) translatey(-30px) }
+//  50%      { transform: translatex(20px) translatey(20px); }
+//  100%     { transform: translatex(-30px) translatey(-30px) }
+//}
+
+@keyframes route-1 {
+  0%       { transform: translatex(0px); }
+  50%      { transform: translatex(60px); }
+  75%      { transform: translatex(0px); }
+  100%     { transform: translatex(-200px) translatey(-150px); }
+}
+
+
+@keyframes route-2 {
+  0%       { transform: translatex(0px) translatey(0px) }
+  50%      { transform: translatex(-60px) translatey(110px) }
+  75%      { transform: translatex(0px) translatey(0px) }
+  100%     { transform: translatex(200px) translatey(-150px) }
+}
+
+
+@keyframes route-3 {
+  0%       { transform: translatex(0px) translatey(0px) }
+  50%      { transform: translatex(60px) translatey(100px) }
+  75%      { transform: translatex(0px) translatey(0px) }
+  100%     { transform: translatex(-200px) translatey(150px) }
+}
+
+
+@keyframes route-4 {
+  0%       { transform: translatex(0px) translatey(0px) }
+  50%      { transform: translatex(-60px) translatey(210px) }
+  75%      { transform: translatex(0px) translatey(0px) }
+  100%     { transform: translatex(200px) translatey(150px) }
+}
+
+@keyframes fade-in {
+  0%       { opacity: 0 }
+  50%      { opacity: 0 }
+  75%      { opacity: 0 }
+  100%     { opacity: 1 }
+}
+
+@keyframes fade-out {
+  0%       { opacity: 1 }
+  50%      { opacity: 1 }
+  75%      { opacity: 1 }
+  100%     { opacity: 0 }
+}
+
+@keyframes growing-circle {
+  0%       { clip-path: circle(50% at 50% 50%); }
+  25%      { clip-path: circle(50% at 50% 50%); }
+  50%      { clip-path: circle(50% at 50% 50%); }
+  75%      { clip-path: circle(50% at 50% 50%); }
+  100%     { clip-path: circle(50% at 50% 50%); }
+}
+
+@keyframes circle {
+  from {
+    -webkit-clip-path: circle(0%);
+    clip-path: circle(0%);
+    background-color: rgba(56, 99, 165, 0.05);
+
+  }
+  to {
+    -webkit-clip-path: circle(100px);
+    clip-path: circle(100px);
+    background-color: rgba(56, 99, 165, 0.9);
+
+  }
+}
